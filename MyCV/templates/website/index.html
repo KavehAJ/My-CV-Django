@@ -1,138 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static%}
 
-{% load static %}
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Kaveh Alijani</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-  <!-- Fonts -->
-  <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome.min.css' %}">
-  <!-- Icon -->
-  <link rel="stylesheet" type="text/css" href="{% static 'fonts/simple-line-icons.css' %}">
-  <!-- Slicknav -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/slicknav.css' %}">
-  <!-- Nivo Lightbox -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox.css' %}">
-  <!-- Animate -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
-  <!-- Main Style -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-  <!-- Responsive Style -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
-
-</head>
-
-<body>
-
-  <!-- Header Area wrapper Starts -->
-  <header id="header-wrap">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
-            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="icon-menu"></span>
-            <span class="icon-menu"></span>
-            <span class="icon-menu"></span>
-          </button>
-          <a href="index.html" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt=""></a>
-        </div>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item active">
-              <a class="nav-link" href="#hero-area">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">
-                Resume
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolios">
-                Background
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Mobile Menu Start -->
-      <ul class="onepage-nev mobile-menu">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">about</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#resume">resume</a>
-        </li>
-        <li>
-          <a href="#portfolio">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <!-- Mobile Menu End -->
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Area Start -->
-    <div id="hero-area" class="hero-area-bg">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <div class="contents">
-              <h2 class="head-title wow fadeInUp" data-wow-delay="0.2s">Kaveh Alijani</h2>
-              <p class="script-font wow fadeInUp" data-wow-delay="0.4s">Computer Science Student | Aspiring Backend
-                Developer </p>
-              <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-                <li>
-                  <a class="linkedin" href="https://www.linkedin.com/in/kaveh-alijani-574716348/"><i
-                      class="icon-social-linkedin"></i></a>
-                </li>
-                <li>
-                  <a class="google" href="https://github.com/KavehAJ"><i class="icon-social-github"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!-- Hero Area End -->
-
-  </header>
-  <!-- Header Area wrapper End -->
-
+{% block content%}
   <!-- About Section Start -->
   <section id="about" class="section-padding">
     <div class="container">
@@ -151,12 +20,12 @@
               a backend development internship.</p>
             <div class="about-profile">
               <ul class="admin-profile">
-                <li><span class="pro-title"> Name </span> <span class="pro-detail">Kaveh Alijani</span></li>
-                <li><span class="pro-title"> Age </span> <span class="pro-detail">23 Years</span></li>
-                <li><span class="pro-title"> Country </span> <span class="pro-detail">Iran</span></li>
-                <li><span class="pro-title"> Location </span> <span class="pro-detail">Tehran</span></li>
-                <li><span class="pro-title"> e-mail </span> <span class="pro-detail">Kaveh.aj17@gmail.com</span></li>
-                <li><span class="pro-title"> Phone </span> <span class="pro-detail">09909083082</span></li>
+                <li><span class="pro-title"> Name </span> <span class="pro-detail">{{name}}</span></li>
+                <li><span class="pro-title"> Age </span> <span class="pro-detail">{{age}}</span></li>
+                <li><span class="pro-title"> Country </span> <span class="pro-detail">{{country}}</span></li>
+                <li><span class="pro-title"> Location </span> <span class="pro-detail">{{city}}</span></li>
+                <li><span class="pro-title"> e-mail </span> <span class="pro-detail">{{email}}</span></li>
+                <li><span class="pro-title"> Phone </span> <span class="pro-detail">{{number}}</span></li>
                 <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
               </ul>
             </div>
@@ -737,15 +606,15 @@
               <div class="footer-right-contact">
                 <div class="single-contact">
                   <div class="contact-icon"> <i class="fa fa-map-marker"></i> </div>
-                  <p>Tehran, Iran</p>
+                  <p>{{city}}, {{country}}</p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon"> <i class="fa fa-envelope"></i> </div>
-                  <p><a href="mailto:Kaveh.aj17@gmail.com">Kaveh.aj17@gmail.com</a></p>
+                  <p><a href="mailto:Kaveh.aj17@gmail.com">{{email}}</a></p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon"> <i class="fa fa-phone"></i> </div>
-                  <p><a href="tel:+989909083082">+98 990 908 3082</a></p>
+                  <p><a href="tel:+989909083082">{{number}}</a></p>
                 </div>
               </div>
             </div>
@@ -756,39 +625,4 @@
   </section>
   <!-- Contact Section End -->
 
-  <!-- Footer Section Start -->
-  <footer class="footer-area section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-            <p>Copyright © 2026 All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Section End -->
-
-  <!-- Go to Top Link -->
-  <a href="#" class="back-to-top">
-    <i class="icon-arrow-up"></i>
-  </a>
-
-  <!-- jQuery first, then Popper,js' %}, then Bootstrap JS -->
-  <script src="{% static 'js/jquery-min.js' %}"></script>
-  <script src="{% static 'js/popper.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'js/jquery.mixitup.js' %}"></script>
-  <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
-  <script src="{% static 'js/waypoints.min.js' %}"></script>
-  <script src="{% static 'js/wow.js' %}"></script>
-  <script src="{% static 'js/jquery.nav.js' %}"></script>
-  <script src="{% static 'js/jquery.easing.min.js' %}"></script>
-  <script src="{% static 'js/nivo-lightbox.js' %}"></script>
-  <script src="{% static 'js/jquery.slicknav.js' %}"></script>
-  <script src="{% static 'js/main.js' %}"></script>
-
-</body>
-
-</html>
+{% endblock%}
