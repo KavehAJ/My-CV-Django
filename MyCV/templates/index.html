@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -9,21 +11,21 @@
   <title>Kaveh Alijani</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
   <!-- Fonts -->
-  <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome.min.css' %}">
   <!-- Icon -->
-  <link rel="stylesheet" type="text/css" href="static/fonts/simple-line-icons.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/simple-line-icons.css' %}">
   <!-- Slicknav -->
-  <link rel="stylesheet" type="text/css" href="static/css/slicknav.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slicknav.css' %}">
   <!-- Nivo Lightbox -->
-  <link rel="stylesheet" type="text/css" href="static/css/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox.css' %}">
   <!-- Animate -->
-  <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
   <!-- Main Style -->
-  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   <!-- Responsive Style -->
-  <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
 </head>
 
@@ -43,7 +45,7 @@
             <span class="icon-menu"></span>
             <span class="icon-menu"></span>
           </button>
-          <a href="index.html" class="navbar-brand"><img src="static/img/logo.png" alt=""></a>
+          <a href="index.html" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
@@ -137,7 +139,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-            <img class="img-fluid" src="static/img/about/IMG_4125.jpg" alt="">
+            <img class="img-fluid" src="{% static 'img/about/IMG_4125.jpg' %}" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -208,16 +210,16 @@
                     Honed strong written communication, cultural adaptation, and time-management skills</p>
                 </div>
               </li>
-              <li>
-                <!-- <div class="content-text">
+             <!-- <li>
+                 <div class="content-text">
                   <h3 class="line-title">Video Editor & Videographer - Axema Studio</h3>
                   <span>2022 - 2024</span>
                   <p class="line-text">Filmed and edited wedding ceremonies and event videos, handling projects from
                     on-site shooting through final delivery.
                     Managed video editing and post-production using Adobe Premiere Pro, including cutting, sequencing,
-                    audio synchronization, and final export.</p> -->
+                    audio synchronization, and final export.</p>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -772,19 +774,19 @@
     <i class="icon-arrow-up"></i>
   </a>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="static/js/jquery-min.js"></script>
-  <script src="static/js/popper.min.js"></script>
-  <script src="static/js/bootstrap.min.js"></script>
-  <script src="static/js/jquery.mixitup.js"></script>
-  <script src="static/js/jquery.counterup.min.js"></script>
-  <script src="static/js/waypoints.min.js"></script>
-  <script src="static/js/wow.js"></script>
-  <script src="static/js/jquery.nav.js"></script>
-  <script src="static/js/jquery.easing.min.js"></script>
-  <script src="static/js/nivo-lightbox.js"></script>
-  <script src="static/js/jquery.slicknav.js"></script>
-  <script src="static/js/main.js"></script>
+  <!-- jQuery first, then Popper,js' %}, then Bootstrap JS -->
+  <script src="{% static 'js/jquery-min,js' %}"></script>
+  <script src="{% static 'js/popper.min,js' %}"></script>
+  <script src="{% static 'js/bootstrap.min,js' %}"></script>
+  <script src="{% static 'js/jquery.mixitup,js' %}"></script>
+  <script src="{% static 'js/jquery.counterup.min,js' %}"></script>
+  <script src="{% static 'js/waypoints.min,js' %}"></script>
+  <script src="{% static 'js/wow,js' %}"></script>
+  <script src="{% static 'js/jquery.nav,js' %}"></script>
+  <script src="{% static 'js/jquery.easing.min,js' %}"></script>
+  <script src="{% static 'js/nivo-lightbox,js' %}"></script>
+  <script src="{% static 'js/jquery.slicknav,js' %}"></script>
+  <script src="{% static 'js/main,js' %}"></script>
 
 </body>
 
